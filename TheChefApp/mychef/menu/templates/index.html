@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+
+    {% for cat in data %}
+    <div class="col-md-3 mb-4">
+        <div class="card shadow">
+        <a href="#"><img src="/media/{{cat.img}}" class="card-img-top" alt="{{cat.name}}" style=" height:150px;"/></a>
+        <div class="card-body">
+            <h6 class="card-text"><a href="#">{{cat.name}}</a></h6>
+        </div>
+        <h6 class="card-text"><a href="#">{{cat.description}}</a></h6>
+        <h6 class="card-text"><a href="#">{{cat.price}}</a></h6>
+        </div>
+    </div>
+    {% endfor %}
+</html>
