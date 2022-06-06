@@ -21,10 +21,14 @@
     <!-- my css-->
     <link rel="stylesheet" href="css/my_css.css">
 
-    <!--Google font css-->
+    <!--owl carousel css-->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Libre+Bodoni&display=swap"
+        rel="stylesheet">
     <title>The Cafe Project</title>
 </head>
 
@@ -32,10 +36,11 @@
     <!--Header-->
 
     <div style="text-align: center; background-color: red;">
-        <p class="text-bold" id="heading"><i class="fas fa-shopping-bag"></i>&nbsp;NEW STUFF FOR YOU IN OUR STORE TODAY
+        <p class="text-bold" id="heading"><i class="fa fa-cutlery"></i>&nbsp;NEW STUFF FOR YOU IN OUR STORE TODAY
             25 %
             DISCOUNT</p>
     </div>
+
     <!--Navbar-->
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -56,7 +61,7 @@
                                 aria-hidden="true"></i>&nbsp;&nbsp;Menu</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fa fa-user-circle-o"
+                        <a class="nav-link" href="#"><i class="fa fa-info-circle"
                                 aria-hidden="true"></i>&nbsp;&nbsp;About Us</a>
                     </li>
                     <li class="nav-item">
@@ -81,7 +86,7 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="images/c4.jpeg" class="d-block w-100" style="height:600px" alt="...">
+                <img src="images/c1.jpeg" class="d-block w-100" style="height:600px" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h2>Welcome to the Cafe</h2>
                     <p>You will be always our first priority</p>
@@ -116,51 +121,143 @@
 
     <!--Categories-->
 
-    <div class="row row-cols-1 row-cols-md-2 g-4">
-        <div class="col">
-            <div class="card">
-                <img src="images/7.jpeg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Decaf</h5>
-                    <p class="card-text">This is good</p>
+    <div id="card" class="container mt-5 mb-5">
+        <h1 id="h"><b>BROWSE CATEGORIES</b></h1>
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="col">
+                <div class="card">
+                    <img src="images/card1.jpg" class="card-img-top" style="background-color:lightgray;">
+                    <div class="card-body">
+                        <h3 class="card-title text-center text-bold">SNACKS</h3>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col">
-            <div class="card">
-                <img src="images/8.jpeg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Espresso</h5>
-                    <p class="card-text">This is good too</p>
+            <div class="col">
+                <div class="card">
+                    <img src="images/card2.jpg" class="card-img-top" style="background-color:lightgray;">
+                    <div class="card-body">
+                        <h3 class="card-title text-center text-bold">BEVERAGES</h3>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col">
-            <div class="card">
-                <img src="images/2.jpeg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Latte</h5>
-                    <p class="card-text">This is nice</p>
+            <div class="col">
+                <div class="card">
+                    <img src="images/card3.jpg" class="card-img-top" style="background-color:lightgray;">
+                    <div class="card-body">
+                        <h3 class="card-title text-center text-bold">CHOCO MUD PIE</h3>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col">
-            <div class="card">
-                <img src="images/5.jpeg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Cappuccino</h5>
-                    <p class="card-text">This is nice too</p>
+            <div class="col">
+                <div class="card">
+                    <img src="images/card4.jpg" class="card-img-top" style="background-color:lightgray;">
+                    <div class="card-body">
+                        <h3 class="card-title text-center text-bold">COFFEE</h3>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
+
+    <!--OFFERS & DEALS-->
+
+    <div class="container">
+        <h1 id="h"><b>OFFERS & DEALS</b></h1>
+        <div class="owl-carousel owl-theme">
+            <div class="ms-2 me-2">
+                <div class="card">
+                    <img data-src="/images/oc1.jpg" class="card-img-top owl-lazy">
+                    <div class="card-body">
+                        <h3 class="card-title text-center text-bold">UNIK</h3>
+                        <p id="l" class="text-center">DESIGNED TO COMFORT</p>
+                        <p id="l" class="text-center">INR 999</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ms-2 me-2">
+                <div class="card">
+                    <img data-src="/images/oc2.jpg" class="card-img-top owl-lazy">
+                    <div class="card-body">
+                        <h3 class="card-title text-center text-bold">PANTHER</h3>
+                        <p id="l" class="text-center">DESIGNED TO COMFORT</p>
+                        <p id="l" class="text-center">INR 999</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ms-2 me-2">
+                <div class="card">
+                    <img data-src="/images/oc3.jpg" class="card-img-top owl-lazy">
+                    <div class="card-body">
+                        <h3 class="card-title text-center text-bold">GLORY</h3>
+                        <p id="l" class="text-center">DESIGNED TO COMFORT</p>
+                        <p id="l" class="text-center">INR 999</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ms-2 me-2">
+                <div class="card">
+                    <img data-src="/images/oc4.jpg" class="card-img-top owl-lazy">
+                    <div class="card-body">
+                        <h3 class="card-title text-center text-bold">DIVA</h3>
+                        <p id="l" class="text-center">DESIGNED TO COMFORT</p>
+                        <p id="l" class="text-center">INR 999</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ms-2 me-2">
+                <div class="card">
+                    <img data-src="/images/oc5.jpg" class="card-img-top owl-lazy">
+                    <div class="card-body">
+                        <h3 class="card-title text-center text-bold">GREEN SHOE</h3>
+                        <p id="l" class="text-center">DESIGNED TO COMFORT</p>
+                        <p id="l" class="text-center">INR 999</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ms-2 me-2">
+                <div class="card">
+                    <img data-src="/images/oc6.jpg" class="card-img-top owl-lazy">
+                    <div class="card-body">
+                        <h3 class="card-title text-center text-bold">SCOPE</h3>
+                        <p id="l" class="text-center">DESIGNED TO COMFORT</p>
+                        <p id="l" class="text-center">INR 999</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ms-2 me-2">
+                <div class="card">
+                    <img data-src="/images/oc7.jpg" class="card-img-top owl-lazy">
+                    <div class="card-body">
+                        <h3 class="card-title text-center text-bold">CHAMPS CONCEPT</h3>
+                        <p id="l" class="text-center">DESIGNED TO COMFORT</p>
+                        <p id="l" class="text-center">INR 999</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ms-2 me-2">
+                <div class="card">
+                    <img data-src="/images/oc8.jpg" class="card-img-top owl-lazy">
+                    <div class="card-body">
+                        <h3 class="card-title text-center text-bold">CHAMPS BRAZIL</h3>
+                        <p id="l" class="text-center">DESIGNED TO COMFORT</p>
+                        <p id="l" class="text-center">INR 999</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="js/jquery.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
