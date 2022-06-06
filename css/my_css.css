@@ -15,8 +15,8 @@
 .navbar-nav > li{
     padding-left: 30px;
     padding-right: 30px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 ul li:hover a{
     color: white !important;
@@ -32,17 +32,17 @@ ul li:hover a{
     font-size: 25px;
 }
 .navbar-brand:hover{
-    color: black !important;
+    color: red !important;
     transform: scale(1.1);
     transition: transform 0.5s;
 }
 .carousel-caption{
-    color: blue;
+    color: black;
     font-size: 30px;
 }
 .card-title{
     color: red;
 }
 .card-text{
-    color: purple
+    color: black;
 }
