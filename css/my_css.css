@@ -5,18 +5,24 @@
     font-family: 'Libre Bodoni', serif;
 }
 
+#heading{
+    letter-spacing: 2px;
+    font-size: 0.875em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 .navbar-nav > li{
     padding-left: 30px;
     padding-right: 30px;
-    padding-top: 0px;
-    padding-bottom: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 ul li:hover a{
-    color: purple !important;
-    background-color: gold;
+    color: white !important;
+    background-color: rgb(233, 65, 65);
     transform: scale(1.1);
     transition: transform 0.5s;
-    border-radius: 50%;
 }
 .nav-link{
     font-size: 20px;
@@ -26,7 +32,7 @@ ul li:hover a{
     font-size: 25px;
 }
 .navbar-brand:hover{
-    color: gold !important;
+    color: black !important;
     transform: scale(1.1);
     transition: transform 0.5s;
 }
