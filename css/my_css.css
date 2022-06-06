@@ -38,7 +38,15 @@ ul li:hover a{
 }
 .carousel-caption{
     color: black;
-    font-size: 30px;
+    font-size: 50px;
+    opacity: 0.5;
+    color:white;
+    background-color:black; 
+    border-radius: 20px;
+}
+.carousel-caption:hover {
+    background-color: blue !important;
+    transition: background-color 0.5s !important;
 }
 .card-title{
     color: red;
