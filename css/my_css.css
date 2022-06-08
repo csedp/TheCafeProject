@@ -48,12 +48,12 @@ ul li:hover a{
     font-size: 50px;
     opacity: 0.4;
     color:white;
-    background-color:rgb(8, 7, 7); 
+    background-color:black; 
     border-radius: 100%;
     margin-bottom: 200px;
 }
 .carousel-caption:hover {
-    background-color: rgb(255, 0, 0) !important;
+    background-color: red !important;
     transition: background-color 0.5s !important;
 }
 .card-title{
