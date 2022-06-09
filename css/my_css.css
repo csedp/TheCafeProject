@@ -47,18 +47,21 @@ ul li:hover a{
 }
 
 /*Carousel*/
-
+.carousel-inner img{
+    opacity: 0.6;
+}
 .carousel-caption{
     color: black;
     font-size: 50px;
-    opacity: 0.4;
-    color:white;
-    background-color:black; 
+    font-weight: bold;
+    /*color:white;
+    background-color:rgb(64, 59, 59);*/
     border-radius: 100%;
     margin-bottom: 200px;
 }
 .carousel-caption:hover {
-    background-color: red !important;
+    background-color: rgb(216, 226, 243) !important;
+    opacity: 0.6;
     transition: background-color 0.5s !important;
 }
 .card-title{
@@ -100,6 +103,7 @@ ul li:hover a{
     cursor: pointer;
 }
 /*Footer*/
+
 footer {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -109,5 +113,27 @@ footer {
     transition: transform 0.5s;
 }
 .communication:hover{
-    color: aqua;
+    color: red;
+}
+.communication{
+    text-decoration: none;
+    list-style: none;
+    letter-spacing: 3px;
+    font-size: 0.875em;
+}
+a:hover{
+    text-decoration: none!important;
+    list-style: none;
+}
+.fn{
+    text-decoration: none;
+    list-style: none;
+    letter-spacing: 3px;
+    font-size: 0.875em;
+}
+.fn-1{
+    text-decoration: none;
+    list-style: none;
+    letter-spacing: 3px;
+    font-size: 1em;
 }
