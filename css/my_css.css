@@ -7,7 +7,11 @@
 }
 
 /*Heading & Navbar*/
-
+#titlediv  {
+    font-size: 30px;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bolder;
+}
 #heading{
     letter-spacing: 2px;
     font-size: 0.875em;
@@ -21,12 +25,13 @@ h3{
 .navbar-nav > li{
     padding-left: 30px;
     padding-right: 30px;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
 }
 ul li:hover a{
-    color: white !important;
-    background-color: red;
-    transform: scale(1.1);
+    color: rgba(70, 12, 24, 0.963) !important;
+    /* background-color: red; */
+    transform: scale(1.2);
     transition: transform 0.5s;
 }
 .nav-link{
@@ -36,7 +41,7 @@ ul li:hover a{
     font-size: 25px;
 }
 .navbar-brand:hover{
-    color: red !important;
+    color: rgba(70, 12, 24, 0.963) !important;
     transform: scale(1.1);
     transition: transform 0.5s;
 }
