@@ -8,27 +8,29 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
         <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
             integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    
+
         <!--w3-css-->
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@700&display=swap" rel="stylesheet">
-    
-        <!-- my css-->  
+
+        <!-- my css-->
         {% comment %} Made changes {% endcomment %}
-        <link rel="stylesheet" href= "{% static 'my_css.css' %}">
-    
+        <link rel="stylesheet" href="{% static 'my_css.css' %}">
+
         <!--owl carousel css-->
-        <link rel="stylesheet" href="{% static "owl.carousel.min.css" %}">
-        <link rel="stylesheet" href="{% static "owl.theme.default.min.css" %}">
-    
+        <link rel="stylesheet" href="{% static " owl.carousel.min.css" %}">
+        <link rel="stylesheet" href="{% static " owl.theme.default.min.css" %}">
+
         <!--Google Fonts-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,44 +40,44 @@
     </head>
 
     <body>
-    <!--Navbar-->
+        <!--Navbar-->
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">The Cafe Project</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html"><i class="fa fa-home"
-                                aria-hidden="true"></i>&nbsp;&nbsp;Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="menu.html"><i class="fa fa-cutlery"
-                                aria-hidden="true"></i>&nbsp;&nbsp;Menu</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#"><i class="fa fa-info-circle"
-                                aria-hidden="true"></i>&nbsp;&nbsp;About Us</a>
-                    </li>
-                </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">The Cafe Project</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html"><i class="fa fa-home"
+                                    aria-hidden="true"></i>&nbsp;&nbsp;Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="menu.html"><i class="fa fa-cutlery"
+                                    aria-hidden="true"></i>&nbsp;&nbsp;Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#"><i class="fa fa-info-circle"
+                                    aria-hidden="true"></i>&nbsp;&nbsp;About Us</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
 
-        <!-- Card template -->    
+        <!-- Card template -->
         <div class="album py-5 bg-light">
             <div class="container">
-                {%for i in data%}
-                <div class="row col-3">
-                    <div class="col">
+                <div class="row">
+                    {%for i in data%}
+                    <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card shadow-sm">
-                            <img src="{{i.dishImage}}" class="d-block w-100" alt="..." height=220px width=80px>
-
-                            <div class="card-body">
+                            <img src="/media/{{i.dishImage}}" class="d-block w-100" alt="..." height=220px width=80px>
+                            <div class="card-body" style="flex-direction: row;">
                                 <p class="card-text">{{i.dishName}}<br>{{i.dishDesc}}</p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
@@ -85,12 +87,15 @@
                                     <small class="text-muted">&#128337;{{i.dishPrepTime}} mins</small>
                                 </div>
                             </div>
-                            {%endfor%}
                         </div>
                     </div>
-                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-                        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-                        crossorigin="anonymous"></script>
+                    {%endfor%}
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+            crossorigin="anonymous"></script>
     </body>
 
 </html>
