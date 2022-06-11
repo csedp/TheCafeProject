@@ -2,84 +2,80 @@
     margin: 0 0;
     padding: 0 0;
     box-sizing: border-box;
-    font-family: 'Cormorant Garamond', serif;
-    font-family: 'Libre Bodoni', serif;
 }
 
 /*Heading & Navbar*/
-#titlediv  {
+
+.navbar-brand{
     font-size: 30px;
     font-family: 'Dancing Script', cursive;
     font-weight: bolder;
 }
-#heading{
-    letter-spacing: 2px;
-    font-size: 0.875em;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-weight: bold;
-}
-h3{
-    font-family: 'Libre Bodoni', serif;
-}
-.navbar-nav > li{
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 5px;
-    padding-top: 5px;
-}
-ul li:hover a{
-    color: rgba(70, 12, 24, 0.963) !important;
-    /* background-color: red; */
-    transform: scale(1.2);
-    transition: transform 0.5s;
-}
-.nav-link{
-    font-size: 17px;
-}
-.navbar-brand{
-    font-size: 25px;
-}
+
 .navbar-brand:hover{
     color: rgba(70, 12, 24, 0.963) !important;
     transform: scale(1.1);
     transition: transform 0.5s;
 }
 
+.navbar-nav > li{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+ul li:hover a{
+    color: rgba(70, 12, 24, 0.963) !important;
+    transform: scale(1.2);
+    transition: transform 0.5s;
+}
+
+.nav-link{
+    font-size: 20px;
+    font-family: 'Cormorant Garamond', serif;
+}
+
 /*Carousel*/
+
 .carousel-inner img{
     opacity: 0.6;
 }
+
 .carousel-caption{
     color: black;
     font-size: 50px;
     font-weight: bold;
-    /*color:white;
-    background-color:rgb(64, 59, 59);*/
+    font-family: 'Libre Bodoni', serif;
     border-radius: 100%;
     margin-bottom: 200px;
 }
+
 .carousel-caption:hover {
     background-color: rgb(216, 226, 243) !important;
     opacity: 0.6;
     transition: background-color 0.5s !important;
 }
-.card-title{
-    color: red;
-}
-.card-text{
-    color: black;
-}
 
 /*Categories*/
+
+.card-title{
+    color: red;
+    font-family: 'Libre Bodoni', serif;
+    font-size: 20px;
+}
 
 #h{
     text-align:center;
     margin: 0 auto 80px;
     position:relative;
     line-height: 60px;
-    color:#555
+    color:#555;
+    font-size: 40px;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: bolder;
 }
+
 #h::after{
     content:'';
     background:red;
@@ -94,46 +90,85 @@ ul li:hover a{
 
 #c:hover{
     color: white !important;
-    background-color: white;
+    background-color: white !important;
     transform: scale(1.1);
     transition: transform 0.5s;
     cursor: pointer;
 }
+
 .card{
     cursor: pointer;
 }
+
+#l{
+    font-family: 'Libre Bodoni', serif;
+}
+
 /*Footer*/
 
 footer {
     padding-top: 20px;
     padding-bottom: 20px;
+    background-color:lightsteelblue; 
+    color:black; 
+    border-radius: 20px;
+    font-family: 'Cormorant Garamond', serif;
 }
+
 .imag:hover{
     transform: scale(1.1);
     transition: transform 0.5s;
 }
-.communication:hover{
-    color: red;
-}
-.communication{
-    text-decoration: none;
-    list-style: none;
-    letter-spacing: 3px;
-    font-size: 0.875em;
-}
+
 a:hover{
     text-decoration: none!important;
     list-style: none;
 }
+
 .fn{
     text-decoration: none;
     list-style: none;
     letter-spacing: 3px;
-    font-size: 0.875em;
+    font-size: 1em;
 }
+
 .fn-1{
     text-decoration: none;
     list-style: none;
     letter-spacing: 3px;
     font-size: 1em;
+    font-family: 'Libre Bodoni', serif;
+}
+
+.links{
+    color: black;
+    text-decoration: none;
+    list-style: none;
+    letter-spacing: 3px;
+    font-size: 1em;
+    font-family: 'Libre Bodoni', serif;
+}
+
+.links:hover{
+    color: red !important;
+    transform: scale(1.1);
+    transition: transform 0.5s;
+}
+
+.communication{
+    text-decoration: none;
+    list-style: none;
+    letter-spacing: 3px;
+    font-size: 1em;
+    font-family: 'Libre Bodoni', serif;
+}
+
+.communication:hover{
+    color: red !important;
+}
+
+/* menu page */
+.card-text{
+    color: black;
+    font-family: 'Cormorant Garamond', serif;
 }
