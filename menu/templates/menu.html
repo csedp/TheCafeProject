@@ -78,7 +78,14 @@
                         <div class="card shadow-sm">
                             <img src="/media/{{i.dishImage}}" class="d-block w-100" alt="..." height=220px width=80px>
                             <div class="card-body" style="flex-direction: row;">
-                                <p class="card-text">{{i.dishName}}<br>{{i.dishDesc}}</p>
+                                <div class="row mb-3">
+                                    <div class="col-sm">
+                                        <p class="card-text">{{i.dishName}}<br>{{i.dishDesc}}</p>
+                                    </div>
+                                    <div class="col-sm" style="text-align:right">
+                                        <p class="card-text"><i class="fa fa-inr" aria-hidden="true"></i>&nbsp;{{i.dishPrice}}</p>
+                                    </div>
+                                </div>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
                                         <button type="button" class="btn btn-sm btn-outline-secondary">Add</button>
