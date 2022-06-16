@@ -10,9 +10,6 @@ def index(request):
     return render(request, 'index.html')
 
 # Product List According to Category
-def category_product_list(request,cat_id):
-	category=Category.objects.get(id=cat_id)
-	data=Menu.objects.filter(category=category).order_by('-id')
-	return render(request,'category_product_list.html',{
-			'data':data,
-			})
+def category_list(request):
+    data=Category.objects.all().order_by('-id')
+    return render(request,'category_list.html',{'data':data})
