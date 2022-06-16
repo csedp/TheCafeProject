@@ -1,5 +1,4 @@
 {% load static %}
-
 <!doctype html>
 <html lang="en">
 
@@ -68,20 +67,5 @@
                 </div>
             </div>
         </nav>
-
-
-<main class="container my-4">
-	<!-- Featured Products -->
-	<h3 class="my-4 border-bottom pb-1">Categories</h3>
-	<div class="row">
-		{% if data %}
-			{% for cat in data %}
-			
-				<!--<a href="#"><img src="/media/{{cat.image}}" class="card-img-top" alt="{{cat.title}}" style=" height:150px;"/></a>-->
-				
-					<a href="/category-menu-list/{{cat.id}}">{{cat.title}}</a>
-				
-			{% endfor %}
-		{% endif %}
-	</div>
-</main>
+        {%block content%}{%endblock content%}
+    </body>
