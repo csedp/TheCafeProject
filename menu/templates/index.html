@@ -3,43 +3,43 @@
     {% load static %}
 
     <head>
-        <!--------- Meta tags --------->
+        <!-- Meta tags -->
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!--------- Bootstrap CSS --------->
+        <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
             integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-        <!--------- W3 css --------->
+        <!-- W3 css -->
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-        <!--------- Font Awesome CSS --------->
+        <!-- Font Awesome CSS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
             integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
             crossorigin="anonymous" referrerpolicy="no-referrer"/>
 
-        <!--------- External CSS files --------->
+        <!-- External CSS files -->
         <link rel="stylesheet" href="{% static 'my_css.css' %}">
         <link rel="stylesheet" href="{% static 'owl.carousel.min.css' %}">
         <link rel="stylesheet" href="{% static 'owl.theme.default.min.css' %}">
 
-        <!--------- Google Fonts --------->
+        <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@700&display=swap" rel="stylesheet">
 
-        <!--------- Favicon --------->
+        <!-- Favicon -->
         <link rel="icon" type="image/png" href="media/images/logo.png">
         <title>The Cafe Project</title>
     </head>
 
     <body>
 
-        <!--------- Navbar --------->
+        <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">The Cafe Project</a>
@@ -67,7 +67,7 @@
             </div>
         </nav>
 
-        <!--------- Carousel --------->
+        <!-- Carousel -->
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -112,46 +112,48 @@
             </button>
         </div>
 
-        <!--------- Categories --------->
+        <!-- Categories -->
+
         <div id="card" class="container mt-5 mb-5">
             <h1 id="h"><b>BROWSE CATEGORIES</b></h1>
             <div class="row row-cols-1 row-cols-md-4 g-4">
                 <div class="col">
                     <div class="card shadow-lg" id="c">
-                        <img src="media/images/card1.jpg" class="card-img-top" style="background-color:lightgray;">
+                        <img src="media/images/ff.jpg" class="card-img-top" style="background-color:lightgray;">
                         <div class="card-body">
-                            <h3 class="card-title text-center text-bold">SNACKS</h3>
+                            <h3 class="card-title text-center text-bold mb-4">Fries</h3>
                         </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card shadow-lg" id="c">
-                        <img src="media/images/card2.jpg" class="card-img-top" style="background-color:lightgray;">
+                        <img src="media/images/bs.jpg" class="card-img-top" style="background-color:lightgray;">
                         <div class="card-body">
-                            <h3 class="card-title text-center text-bold">BEVERAGES</h3>
+                            <h3 class="card-title text-center text-bold">Burgers & Sandwiches</h3>
                         </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card shadow-lg" id="c">
-                        <img src="media/images/card3.jpg" class="card-img-top" style="background-color:lightgray;">
+                        <img src="media/images/pp.jpg" class="card-img-top" style="background-color:lightgray;">
                         <div class="card-body">
-                            <h3 class="card-title text-center text-bold">CHOCO MUD PIE</h3>
+                            <h3 class="card-title text-center text-bold">Pizza and Pasta</h3>
                         </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card shadow-lg" id="c">
-                        <img src="media/images/card4.jpg" class="card-img-top" style="background-color:lightgray;">
+                        <img src="media/images/bd.jpg" class="card-img-top" style="background-color:lightgray;">
                         <div class="card-body">
-                            <h3 class="card-title text-center text-bold">COFFEE</h3>
+                            <h3 class="card-title text-center text-bold mb-4">Beverages and Drinks</h3>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!--------- Offers & Deals --------->
+        <!-- Offers & Deals -->
+
         <div class="container mb-5">
             <h1 id="h"><b>OFFERS & DEALS</b></h1>
             <div class="owl-carousel owl-theme">
@@ -239,7 +241,7 @@
         </div>
         </div>
 
-        <!--------- Footer --------->
+        <!-- Footer -->
         <footer>
             <div class="container">
                 <div class="row">
@@ -278,23 +280,23 @@
                             <p><i class="fa fa-envelope" aria-hidden="true"></i> <a class="communication"
                                     href="mailto:#">csedp@gmail.com</a>
                             </p>
-                            <!--------- Linkedin --------->
+                            <!-- Linkedin -->
                             <a href="#"><img class="imag"
                                     src="https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-linkedin-512.png"
                                     height="40px" width="40px"></a>&nbsp;&nbsp;&nbsp;
-                            <!--------- Github --------->
+                            <!-- Github -->
                             <a href="#"><img class="imag"
                                     src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png"
                                     height="40px" width="40px"></a>&nbsp;&nbsp;&nbsp;
-                            <!--------- Twitter --------->
+                            <!-- Twitter -->
                             <a href="#"><img class="imag"
                                     src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Twitter2_colored_svg-512.png"
                                     height="40px" width="40px"></a>&nbsp;&nbsp;&nbsp;
-                            <!--------- Instagram --------->
+                            <!-- Instagram -->
                             <a href="#"><img class="imag"
                                     src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo_instagram-512.png"
                                     height="40px" width="40px"></a>&nbsp;&nbsp;&nbsp;
-                            <!--------- Facebook --------->
+                            <!-- Facebook -->
                             <a href="#"><img class="imag"
                                     src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Facebook_colored_svg_copy-512.png"
                                     height="40px" width="40px"></a>
@@ -303,7 +305,7 @@
                 </div>
             </div>
 
-            <!--------- Copyright --------->
+            <!-- Copyright -->
             <div class="row mt-4">
                 <div class="text-center p-3">
                     <h6 id="l" class="fn"><b><i class="fa fa-copyright" aria-hidden="true"></i>&nbsp;2022. All Rights
@@ -313,12 +315,12 @@
             </div>
         </footer>
 
-        <!--------- BootStrap JS --------->
+        <!-- BootStrap JS -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
             crossorigin="anonymous"></script>
 
-        <!--------- Font Awesome JS --------->
+        <!-- Font Awesome JS -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"
             integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ=="
             crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -328,7 +330,7 @@
         <script src="{% static 'owl.carousel.min.js' %}"></script>
         <script src="{% static 'script.js' %}"></script>
 
-        <!--------- No Script --------->
+        <!-- No Script -->
         <noscript>Please enable JavaScript in your browser to view this page</noscript>
 
     </body>
