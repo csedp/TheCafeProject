@@ -74,17 +74,20 @@
         <div class="album py-5 bg-light">
             <div class="container">
                 <div class="row">
-                    <h1>Fries</h1> 
+                    <h1 id="cat">Fries</h1> 
                     {%for i in data%}
                     {%if i.category.title == "Fries" %}
                     <div class="col-lg-3 col-md-6 mb-4">
-                        <div class="card shadow-sm">
+                        <div class="card shadow">
                             <img src="/media/{{i.dishImage}}" class="d-block w-100" alt="..." height=220px width=80px>
                             <div class="card-body" style="flex-direction: row;">
                                 <div class="row mb-3">
                                     <div class="col-sm">
-                                        <p class="card-text">{{i.dishName}}<br>{{i.dishDesc}}</p>
+                                        <h5 class="card-text">{{i.dishName}}</h5>
+                                        <p class="card-text">{{i.dishDesc}}</p>
                                     </div>
+                                </div>
+                                <div class="row mb-3">
                                     <div class="col-sm" style="text-align:right">
                                         <p class="card-text"><i class="fa fa-inr" aria-hidden="true"></i>&nbsp;{{i.dishPrice}}</p>
                                     </div>
@@ -110,11 +113,11 @@
         <div class="album py-5 bg-light">
             <div class="container">
                 <div class="row">
-                    <h1>Burgers & Sandwiches</h1>
+                    <h1 id="cat">Burgers & Sandwiches</h1>
                     {%for i in data%}
                     {%if i.category.title == "Burgers & Sandwiches"%}
                     <div class="col-lg-3 col-md-6 mb-4">
-                        <div class="card shadow-sm">
+                        <div class="card shadow">
                             <img src="/media/{{i.dishImage}}" class="d-block w-100" alt="..." height=220px width=80px>
                             <div class="card-body" style="flex-direction: row;">
                                 <div class="row mb-3">
@@ -146,11 +149,11 @@
         <div class="album py-5 bg-light">
             <div class="container">
                 <div class="row">
-                    <h1>Pizza & Pasta</h1>
+                    <h1 id="cat">Pizza & Pasta</h1>
                     {%for i in data%}
                     {%if i.category.title == "Pizza and Pasta"%}
                     <div class="col-lg-3 col-md-6 mb-4">
-                        <div class="card shadow-sm">
+                        <div class="card shadow">
                             <img src="/media/{{i.dishImage}}" class="d-block w-100" alt="..." height=220px width=80px>
                             <div class="card-body" style="flex-direction: row;">
                                 <div class="row mb-3">
@@ -182,11 +185,11 @@
         <div class="album py-5 bg-light">
             <div class="container">
                 <div class="row">
-                    <h1>Beverages & Drinks</h1>
+                    <h1 id="cat">Beverages & Drinks</h1>
                     {%for i in data%}
                     {%if i.category.title == "Beverages and Drinks"%}
                     <div class="col-lg-3 col-md-6 mb-4">
-                        <div class="card shadow-sm">
+                        <div class="card shadow">
                             <img src="/media/{{i.dishImage}}" class="d-block w-100" alt="..." height=220px width=80px>
                             <div class="card-body" style="flex-direction: row;">
                                 <div class="row mb-3">
