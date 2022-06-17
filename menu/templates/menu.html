@@ -73,8 +73,11 @@
         <div class="album py-5 bg-light">
             <div class="container">
                 <div class="row">
+                    <h1> Fries</h1> 
                     {%for i in data%}
-                    <div class="col-lg-4 col-md-6 mb-4">
+                    {%if i.category.title == "Fries" %}
+                    
+                    <div class="col-lg-3 col-md-6 mb-4">
                         <div class="card shadow-sm">
                             <img src="/media/{{i.dishImage}}" class="d-block w-100" alt="..." height=220px width=80px>
                             <div class="card-body" style="flex-direction: row;">
@@ -96,7 +99,123 @@
                             </div>
                         </div>
                     </div>
+                    {% endif %}
                     {%endfor%}
+                   
+                </div>
+            </div>
+        </div>
+
+
+        <div class="album py-5 bg-light">
+            <div class="container">
+                <div class="row">
+                    <h1> Burgers & Sandwiches </h1>
+                    
+                    {%for i in data%}
+                    {%if i.category.title == "Burgers & Sandwiches" %}
+                    
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card shadow-sm">
+                            <img src="/media/{{i.dishImage}}" class="d-block w-100" alt="..." height=220px width=80px>
+                            <div class="card-body" style="flex-direction: row;">
+                                <div class="row mb-3">
+                                    <div class="col-sm">
+                                        <p class="card-text">{{i.dishName}}<br>{{i.dishDesc}}</p>
+                                    </div>
+                                    <div class="col-sm" style="text-align:right">
+                                        <p class="card-text"><i class="fa fa-inr" aria-hidden="true"></i>&nbsp;{{i.dishPrice}}</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Add</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Remove</button>
+                                    </div>
+                                    <small class="text-muted">&#128337;{{i.dishPrepTime}} mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endif %}
+                    {%endfor%}
+                   
+                </div>
+            </div>
+        </div>
+
+
+        <div class="album py-5 bg-light">
+            <div class="container">
+                <div class="row">
+                    <h1> Pizza & Pasta</h1>
+                    
+                    {%for i in data%}
+                    {%if i.category.title == "Pizza and Pasta" %}
+                    
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card shadow-sm">
+                            <img src="/media/{{i.dishImage}}" class="d-block w-100" alt="..." height=220px width=80px>
+                            <div class="card-body" style="flex-direction: row;">
+                                <div class="row mb-3">
+                                    <div class="col-sm">
+                                        <p class="card-text">{{i.dishName}}<br>{{i.dishDesc}}</p>
+                                    </div>
+                                    <div class="col-sm" style="text-align:right">
+                                        <p class="card-text"><i class="fa fa-inr" aria-hidden="true"></i>&nbsp;{{i.dishPrice}}</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Add</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Remove</button>
+                                    </div>
+                                    <small class="text-muted">&#128337;{{i.dishPrepTime}} mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endif %}
+                    {%endfor%}
+                   
+                </div>
+            </div>
+        </div>
+
+
+        <div class="album py-5 bg-light">
+            <div class="container">
+                <div class="row">
+                    <h1> Beverages & Drinks</h1>
+                    
+                    {%for i in data%}
+                    {%if i.category.title == "Beverages and Drinks" %}
+                    
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card shadow-sm">
+                            <img src="/media/{{i.dishImage}}" class="d-block w-100" alt="..." height=220px width=80px>
+                            <div class="card-body" style="flex-direction: row;">
+                                <div class="row mb-3">
+                                    <div class="col-sm">
+                                        <p class="card-text">{{i.dishName}}<br>{{i.dishDesc}}</p>
+                                    </div>
+                                    <div class="col-sm" style="text-align:right">
+                                        <p class="card-text"><i class="fa fa-inr" aria-hidden="true"></i>&nbsp;{{i.dishPrice}}</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Add</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Remove</button>
+                                    </div>
+                                    <small class="text-muted">&#128337;{{i.dishPrepTime}} mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endif %}
+                    {%endfor%}
+                   
                 </div>
             </div>
         </div>
