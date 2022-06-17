@@ -7,7 +7,7 @@ class Category(models.Model):
         return self.title
 
 class Menu(models.Model):
-    dishName = models.CharField(max_length=30)
+    dishName = models.CharField(max_length=35)
     dishDesc = models.TextField()
     dishPrice = models.IntegerField()
     dishPrepTime= models.IntegerField()
