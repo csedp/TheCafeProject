@@ -59,6 +59,10 @@ ul li:hover a{
 
 /*Categories*/
 
+a{
+    text-decoration: none!important;
+}
+
 .card-title{
     color: red;
     font-family: 'Libre Bodoni', serif;
@@ -192,7 +196,4 @@ a:hover{
     font-size: 40px;
     font-family: 'Cormorant Garamond', serif;
     font-weight: bolder;
-}
-a{
-    text-decoration: none!important;
 }
