@@ -197,3 +197,23 @@ a:hover{
     font-family: 'Cormorant Garamond', serif;
     font-weight: bolder;
 }
+
+/* button */
+#btn-back-to-top {
+    color: navy !important;
+    background-color: white !important;
+    position: fixed;
+    bottom: 60px;
+    right: 40px;
+    width: 120px;
+    height: 40px;
+    font-size: 15px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+#btn-back-to-top:hover {
+    transform: scale(1);
+    background-color: navy !important;
+    color: white !important;
+    transition: transform 0.5s;
+}
