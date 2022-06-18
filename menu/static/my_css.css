@@ -193,3 +193,6 @@ a:hover{
     font-family: 'Cormorant Garamond', serif;
     font-weight: bolder;
 }
+a{
+    text-decoration: none!important;
+}
