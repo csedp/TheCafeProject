@@ -108,6 +108,8 @@ a{
     font-family: 'Libre Bodoni', serif;
 }
 
+
+
 /*Footer*/
 
 footer {
@@ -219,3 +221,4 @@ a:hover{
     color: white !important;
     transition: transform 0.5s;
 }
+
