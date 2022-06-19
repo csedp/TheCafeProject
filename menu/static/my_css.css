@@ -190,7 +190,7 @@ a:hover{
 
 #cat{
     text-align: center;
-    margin-bottom: 30px;
+    margin: 20px auto 30px;
     position:relative;
     line-height: 60px;
     color: navy;
