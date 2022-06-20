@@ -2,6 +2,7 @@
     margin: 0 0;
     padding: 0 0;
     box-sizing: border-box;
+    font-family: 'Libre Bodoni', serif;
 }
 
 /*Heading & Navbar*/
@@ -105,7 +106,7 @@ a{
 }
 
 #l{
-    font-family: 'Libre Bodoni', serif;
+    font-size: 1.3em;
 }
 
 /*Footer*/
