@@ -108,8 +108,6 @@ a{
     font-family: 'Libre Bodoni', serif;
 }
 
-
-
 /*Footer*/
 
 footer {
@@ -207,13 +205,14 @@ a:hover{
     color: navy !important;
     background-color: white !important;
     position: fixed;
-    bottom: 60px;
+    bottom: 20px;
     right: 40px;
     width: 120px;
     height: 40px;
     font-size: 15px;
     padding-left: 0px;
     padding-right: 0px;
+    z-index: 9999;
 }
 #btn-back-to-top:hover {
     transform: scale(1);
@@ -221,4 +220,3 @@ a:hover{
     color: white !important;
     transition: transform 0.5s;
 }
-
