@@ -63,6 +63,10 @@
                             <a class="nav-link active" href="#"><i class="fa fa-info-circle"
                                     aria-hidden="true"></i>&nbsp;&nbsp;About Us</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="{% url 'logout' %}"><i class="fa fa-info-circle"
+                                aria-hidden="true"></i>{{p}}</a>
+                            </li>
                     </ul>
                 </div>
             </div>
@@ -94,10 +98,12 @@
                                     </div>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Add</button>
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Remove</button>
-                                    </div>
+                                    <!--<div class="btn-group">-->
+                                        <form action="/" method="POST"/>
+                                        {%csrf_token%}
+                                        <input type="submit" class="btn btn-sm btn-outline-secondary" value="Add To Cart"/>
+                                    </form>
+                                    <!--</div>-->
                                     <small class="text-muted">&#128337;{{i.dishPrepTime}} mins</small>
                                 </div>
                             </div>
