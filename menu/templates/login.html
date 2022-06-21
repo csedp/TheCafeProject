@@ -8,7 +8,7 @@
 <form method="POST">
     {%csrf_token%}
     {{form.as_p}}
-    <input style="margin-top:10px ;" class="button" type="submit" value="Login"/>
+    <input type="submit" value="Login">
 </form>
 
 <p>Don't have an account?<a href="{%url 'register'%}">Register</a></p>
