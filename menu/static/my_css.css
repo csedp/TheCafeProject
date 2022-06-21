@@ -190,8 +190,7 @@ a:hover{
 /*Category headings*/
 
 #cat{
-    text-align: center;
-    margin: 20px auto 30px;
+    margin: 0 auto 30px;
     position:relative;
     line-height: 60px;
     color: navy;
