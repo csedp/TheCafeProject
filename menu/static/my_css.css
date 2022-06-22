@@ -75,7 +75,7 @@ a{
     margin: 0 auto 80px;
     position:relative;
     line-height: 60px;
-    color:#555;
+    color:navy;
     font-size: 40px;
     font-family: 'Cormorant Garamond', serif;
     font-weight: bolder;
@@ -190,7 +190,7 @@ a:hover{
 /*Category headings*/
 
 #cat{
-    margin: 0 auto 30px;
+    margin: 20px auto 30px;
     position:relative;
     line-height: 60px;
     color: navy;
@@ -219,4 +219,19 @@ a:hover{
     background-color: navy !important;
     color: white !important;
     transition: transform 0.5s;
+}
+
+/*Login Page*/
+#login{
+    text-align:center;
+    margin: 0 auto 40px;
+    position:relative;
+    line-height: 40px;
+    color:navy;
+    font-size: 40px;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: bolder;
+}
+#login_card{
+    padding-top: 150px;
 }
