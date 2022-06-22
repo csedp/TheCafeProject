@@ -1,0 +1,33 @@
+/*Login Page & Register Page*/
+
+#login{
+    text-align:center;
+    margin: 0 auto 40px;
+    position:relative;
+    line-height: 40px;
+    color:navy;
+    font-size: 40px;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: bolder;
+}
+#login_card{
+    padding-top: 90px;
+    padding-bottom: 50px;
+}
+#br{
+    border-radius: 20px;
+}
+#crd_body{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+#reg_now:hover{
+    color: red !important;
+    transform: scale(1.1)!important;
+    transition: transform 0.5s!important;
+}
+/*#body{
+    background: linear-gradient(90deg, #EEA390 0%, #EB796F 43%, #EB796F 100%);
+}*/

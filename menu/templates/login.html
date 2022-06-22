@@ -1,17 +1,52 @@
 {% extends 'base.html' %}
 {% block content %}
+<style>
+    @media screen and (max-width:320px) {
+        #search-add-wrapper {
+            padding: 10px;
+        }
+    }
+    input[type=text],
+    input[type=password],
+    textarea {
+        border: 1px solid #757575;
+        border-radius: 5px;
+        padding: 10px;
+        width: 100%;
+    }
 
+    label {
+        padding-top: 10px !important;
+        display: block;
+    }
+
+    ::placeholder {
+        font-weight: 300;
+        opacity: 0.5;
+    }
+    .btn {
+        border: 1px solid #757575;
+        background-color: #FFF;
+        color: navy;
+        padding: 10px;
+        font-size: 14px;
+        border-radius: 5px;
+        cursor: pointer;
+        text-decoration: none;
+    }
+</style>
 <div class="col d-flex justify-content-center" id="login_card">
-    <div class="card shadow">
-        <div class="card-body">
-            <h1 id="login"><b>Login</b></h1>
+    <div class="card shadow" id="br">
+        <div class="card-body" id="crd_body">
+            <h1 id="login"><b><i class="fa fa-power-off" aria-hidden="true"></i>&nbsp;&nbsp;Login</b></h1>
             <form method="POST">
                 {%csrf_token%}
                 {{form.as_p}}
-                <input style="margin-top:10px ;" class="btn btn-success" type="submit" value="Login"/>
+                <center><input style="margin-top:10px ;" class="btn btn-primary" type="submit" value="Login"/></center>
             </form>
-
-            <p>Don't have an account?<a href="{%url 'register'%}">Register</a></p>
+            <div class="mt-4">
+            <p id="reg_now">Don't have an account?<a href="{%url 'register'%}" id="reg_now"> Register Now!</a></p>
+            </div>
         </div>
     </div>
 </div>

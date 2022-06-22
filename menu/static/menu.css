@@ -1,0 +1,48 @@
+/* menu page */
+
+.card-text{
+    font-family: 'Cormorant Garamond', serif;
+}
+.col-lg-3{
+    display: flex;
+    flex-direction: row;
+}
+#crd:hover{
+    opacity: 0.8;
+    transform: scale(1.1);
+    transition: transform 0.5s;
+}
+
+/*Category headings*/
+
+#cat{
+    margin: 20px auto 30px;
+    position:relative;
+    line-height: 60px;
+    color: navy;
+    font-size: 50px;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: bolder;
+}
+
+/* button */
+
+#btn-back-to-top {
+    color: navy !important;
+    background-color: white !important;
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    width: 120px;
+    height: 40px;
+    font-size: 15px;
+    padding-left: 0px;
+    padding-right: 0px;
+    z-index: 9999;
+}
+#btn-back-to-top:hover {
+    transform: scale(1);
+    background-color: navy !important;
+    color: white !important;
+    transition: transform 0.5s;
+}
