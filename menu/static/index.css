@@ -5,45 +5,13 @@
     font-family: 'Libre Bodoni', serif;
 }
 
-/*Heading & Navbar*/
-
-.navbar-brand{
-    font-size: 30px;
-    font-family: 'Dancing Script', cursive;
-    font-weight: bolder;
-}
-
-.navbar-brand:hover{
-    color: rgba(70, 12, 24, 0.963) !important;
-    transform: scale(1.1);
-    transition: transform 0.5s;
-}
-
-.navbar-nav > li{
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 5px;
-    padding-top: 5px;
-}
-
-ul li:hover a{
-    color: rgba(70, 12, 24, 0.963) !important;
-    transform: scale(1.2);
-    transition: transform 0.5s;
-}
-
-.nav-link{
-    font-size: 20px;
-    font-family: 'Cormorant Garamond', serif;
-}
-
 /*Carousel*/
 
 .carousel-inner img{
     opacity: 0.6;
 }
 
-.carousel-caption{
+.carousel-caption {
     color: black;
     font-size: 50px;
     font-weight: bold;
@@ -60,17 +28,17 @@ ul li:hover a{
 
 /*Categories*/
 
-a{
+a {
     text-decoration: none!important;
 }
 
-.card-title{
+.card-title {
     color: red;
     font-family: 'Libre Bodoni', serif;
     font-size: 20px;
 }
 
-#h{
+#h {
     text-align:center;
     margin: 0 auto 80px;
     position:relative;
@@ -81,7 +49,7 @@ a{
     font-weight: bolder;
 }
 
-#h::after{
+#h::after {
     content:'';
     background:red;
     width: 280px;
@@ -93,81 +61,21 @@ a{
     transform:translateX(-50%);
 }
 
-#c:hover{
-    color: white !important;
-    background-color: white !important;
+#c:hover {
+    opacity: 0.8;
     transform: scale(1.1);
     transition: transform 0.5s;
     cursor: pointer;
 }
 
-.card{
+.card {
     cursor: pointer;
 }
 
-#l{
+.card-img-top{
+    object-fit: cover;
+}
+
+#l {
     font-size: 1.3em;
-}
-
-/*Footer*/
-
-footer {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background-color:lightsteelblue; 
-    color:black; 
-    border-radius: 20px;
-    font-family: 'Cormorant Garamond', serif;
-}
-
-.imag:hover{
-    transform: scale(1.1);
-    transition: transform 0.5s;
-}
-
-a:hover{
-    text-decoration: none!important;
-    list-style: none;
-}
-
-.fn{
-    text-decoration: none;
-    list-style: none;
-    letter-spacing: 3px;
-    font-size: 1em;
-}
-
-.fn-1{
-    text-decoration: none;
-    list-style: none;
-    letter-spacing: 3px;
-    font-size: 1em;
-    font-family: 'Libre Bodoni', serif;
-}
-
-.links{
-    color: black;
-    text-decoration: none;
-    list-style: none;
-    letter-spacing: 3px;
-    font-size: 1em;
-    font-family: 'Libre Bodoni', serif;
-}
-
-.links:hover{
-    color: red !important;
-    transform: scale(1.1);
-    transition: transform 0.5s;
-}
-
-.communication{
-    text-decoration: none;
-    list-style: none;
-    letter-spacing: 3px;
-    font-size: 1em;
-    font-family: 'Libre Bodoni', serif;
-}
-
-.communication:hover{
-    color: red !important;
 }

@@ -21,10 +21,9 @@
             crossorigin="anonymous" referrerpolicy="no-referrer"/>
 
         <!-- External CSS files -->
+        <link rel="stylesheet" href="{% static 'navbar.css' %}">
         <link rel="stylesheet" href="{% static 'menu.css' %}">
-        <link rel="stylesheet" href="{% static 'index.css' %}">
-        <link rel="stylesheet" href="{% static 'owl.carousel.min.css' %}">
-        <link rel="stylesheet" href="{% static 'owl.theme.default.min.css' %}">
+        <link rel="stylesheet" href="{% static 'footer.css' %}">
 
         <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -61,7 +60,7 @@
                                     aria-hidden="true"></i>&nbsp;&nbsp;Menu</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#"><i class="fa fa-info-circle"
+                            <a class="nav-link active" href="{% url 'about'%}"><i class="fa fa-info-circle"
                                     aria-hidden="true"></i>&nbsp;&nbsp;About Us</a>
                         </li>
                         <li class="nav-item">
@@ -85,7 +84,7 @@
                     {%if i.category.title == "Fries" %}
                     <div class="col-lg-3 col-md-6 mb-4">
                         <div class="card shadow" id="crd">
-                            <img src="/media/{{i.dishImage}}" class="d-block w-100" alt="..." height=220px width=80px>
+                            <img src="/media/{{i.dishImage}}" class="d-block w-100" alt="Fries" height=220px width=80px>
                             <div class="card-body" style="flex-direction: row;">
                                 <div class="row mb-3">
                                     <div class="col-sm">
@@ -99,12 +98,14 @@
                                     </div>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <!--<div class="btn-group">-->
-                                    <form action="/" method="POST"/>
+                                    <!--<div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Add</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Remove</button>
+                                    </div>-->
+                                    <form action="/" method="POST">
                                         {%csrf_token%}
-                                        <input type="submit" class="btn btn-sm btn-outline-secondary" value="Add To Cart"/>
+                                        <input type="submit" class="btn btn-sm btn-outline-secondary" value="Add To Cart">
                                     </form>
-                                    <!--</div>-->
                                     <small class="text-muted">&#128337;{{i.dishPrepTime}} mins</small>
                                 </div>
                             </div>
@@ -126,7 +127,7 @@
                     {%if i.category.title == "Burgers & Sandwiches"%}
                     <div class="col-lg-3 col-md-6 mb-4">
                         <div class="card shadow" id="crd">
-                            <img src="/media/{{i.dishImage}}" class="d-block w-100" alt="..." height=220px width=80px>
+                            <img src="/media/{{i.dishImage}}" class="d-block w-100" alt="Burgers & Sandwiches" height=220px width=80px>
                             <div class="card-body" style="flex-direction: row;">
                                 <div class="row mb-3">
                                     <div class="col-sm">
@@ -144,9 +145,9 @@
                                         <button type="button" class="btn btn-sm btn-outline-secondary">Add</button>
                                         <button type="button" class="btn btn-sm btn-outline-secondary">Remove</button>
                                     </div>-->
-                                    <form action="/" method="POST"/>
+                                    <form action="/" method="POST">
                                         {%csrf_token%}
-                                        <input type="submit" class="btn btn-sm btn-outline-secondary" value="Add To Cart"/>
+                                        <input type="submit" class="btn btn-sm btn-outline-secondary" value="Add To Cart">
                                     </form>
                                     <small class="text-muted">&#128337;{{i.dishPrepTime}} mins</small>
                                 </div>
@@ -169,7 +170,7 @@
                     {%if i.category.title == "Pizza and Pasta"%}
                     <div class="col-lg-3 col-md-6 mb-4">
                         <div class="card shadow" id="crd">
-                            <img src="/media/{{i.dishImage}}" class="d-block w-100" alt="..." height=220px width=80px>
+                            <img src="/media/{{i.dishImage}}" class="d-block w-100" alt="Pizza & Pasta" height=220px width=80px>
                             <div class="card-body" style="flex-direction: row;">
                                 <div class="row mb-3">
                                     <div class="col-sm">
@@ -187,9 +188,9 @@
                                         <button type="button" class="btn btn-sm btn-outline-secondary">Add</button>
                                         <button type="button" class="btn btn-sm btn-outline-secondary">Remove</button>
                                     </div>-->
-                                    <form action="/" method="POST"/>
+                                    <form action="/" method="POST">
                                         {%csrf_token%}
-                                        <input type="submit" class="btn btn-sm btn-outline-secondary" value="Add To Cart"/>
+                                        <input type="submit" class="btn btn-sm btn-outline-secondary" value="Add To Cart">
                                     </form>
                                     <small class="text-muted">&#128337;{{i.dishPrepTime}} mins</small>
                                 </div>
@@ -212,7 +213,7 @@
                     {%if i.category.title == "Beverages and Drinks"%}
                     <div class="col-lg-3 col-md-6 mb-4">
                         <div class="card shadow" id="crd">
-                            <img src="/media/{{i.dishImage}}" class="d-block w-100" alt="..." height=220px width=80px>
+                            <img src="/media/{{i.dishImage}}" class="d-block w-100" alt="Beverages & Drinks" height=220px width=80px>
                             <div class="card-body" style="flex-direction: row;">
                                 <div class="row mb-3">
                                     <div class="col-sm">
@@ -230,9 +231,9 @@
                                         <button type="button" class="btn btn-sm btn-outline-secondary">Add</button>
                                         <button type="button" class="btn btn-sm btn-outline-secondary">Remove</button>
                                     </div>-->
-                                    <form action="/" method="POST"/>
+                                    <form action="/" method="POST">
                                         {%csrf_token%}
-                                        <input type="submit" class="btn btn-sm btn-outline-secondary" value="Add To Cart"/>
+                                        <input type="submit" class="btn btn-sm btn-outline-secondary" value="Add To Cart">
                                     </form>
                                     <small class="text-muted">&#128337;{{i.dishPrepTime}} mins</small>
                                 </div>
@@ -270,7 +271,7 @@
                             <a href="{% url 'menu'%}" class="links">
                                 <p>MENU</p>
                             </a>
-                            <a href="#" class="links">
+                            <a href="{% url 'about'%}" class="links">
                                 <p>ABOUT US</p>
                             </a>
                         </div>
@@ -332,9 +333,6 @@
             crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
         <!-- External JS files -->
-        <script src="{% static 'jquery.js' %}"></script>
-        <script src="{% static 'owl.carousel.min.js' %}"></script>
-        <script src="{% static 'script.js' %}"></script>
         <script src="{% static 'button.js' %}"></script>
         <!-- No Script -->
         <noscript>Please enable JavaScript in your browser to view this page</noscript>

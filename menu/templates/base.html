@@ -21,10 +21,10 @@
             crossorigin="anonymous" referrerpolicy="no-referrer"/>
 
         <!-- External CSS files -->
-        <link rel="stylesheet" href="{% static 'index.css' %}">
+        <!-- <link rel="stylesheet" href="{% static 'index.css' %}"> -->
         <link rel="stylesheet" href="{% static 'log_reg.css' %}">
-        <link rel="stylesheet" href="{% static 'owl.carousel.min.css' %}">
-        <link rel="stylesheet" href="{% static 'owl.theme.default.min.css' %}">
+        <!-- <link rel="stylesheet" href="{% static 'owl.carousel.min.css' %}">
+        <link rel="stylesheet" href="{% static 'owl.theme.default.min.css' %}"> -->
 
         <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -61,7 +61,7 @@
                                     aria-hidden="true"></i>&nbsp;&nbsp;Menu</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#"><i class="fa fa-info-circle"
+                            <a class="nav-link active" href="{% url 'about'%}"><i class="fa fa-info-circle"
                                     aria-hidden="true"></i>&nbsp;&nbsp;About Us</a>
                         </li>
                     </ul>
@@ -81,10 +81,10 @@
             crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
         <!-- External JS files -->
-        <script src="{% static 'jquery.js' %}"></script>
+        <!-- <script src="{% static 'jquery.js' %}"></script>
         <script src="{% static 'owl.carousel.min.js' %}"></script>
         <script src="{% static 'script.js' %}"></script>
-        <script src="{% static 'button.js' %}"></script>
+        <script src="{% static 'button.js' %}"></script> -->
 
         <!-- No Script -->
         <noscript>Please enable JavaScript in your browser to view this page</noscript>

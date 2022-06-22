@@ -14,6 +14,7 @@ urlpatterns = [
     path('logout/',LogoutView.as_view(next_page='login'), name='logout'),
     path('register/',RegisterView.as_view(), name='register'),
     path("menu",views.menu, name= "menu"),
+    path("about",views.about, name= "about"),
     path("category",views.category_list, name= "category"),
     path('category-menu-list/<int:cat_id>',views.category_menu_list,name='category-menu-list'),
 ]
