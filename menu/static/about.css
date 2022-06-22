@@ -4,3 +4,74 @@
     box-sizing: border-box;
     font-family: 'Libre Bodoni', serif;
 }
+
+body{
+    background-image:
+    radial-gradient(50% 30% ellipse at center bottom, #3d32c0ca 0%, rgba(53, 103, 195, 0.555) 100%),
+    radial-gradient(60% 50% ellipse at center top, #646262 0%, #000000 100%);
+    background-attachment: fixed;
+}
+
+a {
+    text-decoration: none!important;
+}
+
+.card-title {
+    color: red;
+    font-family: 'Libre Bodoni', serif;
+    font-size: 20px;
+}
+
+#h {
+    text-align:center;
+    margin: 0 auto 80px;
+    position:relative;
+    line-height: 60px;
+    color:navy;
+    font-size: 40px;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: bolder;
+}
+
+#h::after {
+    content:'';
+    background:red;
+    width: 280px;
+    height: 5px;
+    border-radius: 5px;
+    position:absolute;
+    bottom: 0;
+    left:50%;
+    transform:translateX(-50%);
+}
+
+#c{
+    display: block;
+    margin: 20px auto;
+    width: 300px;
+}
+
+#c:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out;
+}
+
+#crd_body{
+    margin: 10px;
+}
+
+.iml{
+    margin-left: 50px;
+}
+
+.imr{
+    float: right;
+    margin-right: 50px;
+}
+
+.iml:hover, .imr:hover{
+    opacity: 0.8;
+    transform: scale(1.1);
+    transition: transform 0.5s;
+}
