@@ -4,7 +4,28 @@ footer {
     background-color:lightsteelblue; 
     color:black; 
     border-radius: 20px;
+    /* font-family: 'Cormorant Garamond', serif; */
+}
+
+#e {
+    text-align:center;
+    margin: 0 auto 10px;
+    position:relative;
+    color:navy;
     font-family: 'Cormorant Garamond', serif;
+    font-weight: bolder;
+}
+
+#e::after {
+    content:'';
+    background:red;
+    width: 120px;
+    height: 2px;
+    border-radius: 5px;
+    position:absolute;
+    bottom: 0;
+    left:50%;
+    transform:translateX(-50%);
 }
 
 .imag:hover{
@@ -29,7 +50,7 @@ a:hover{
     list-style: none;
     letter-spacing: 3px;
     font-size: 1em;
-    font-family: 'Libre Bodoni', serif;
+    /* font-family: 'Libre Bodoni', serif; */
 }
 
 .links{
@@ -38,7 +59,7 @@ a:hover{
     list-style: none;
     letter-spacing: 3px;
     font-size: 1em;
-    font-family: 'Libre Bodoni', serif;
+    /* font-family: 'Libre Bodoni', serif; */
 }
 
 .links:hover{
@@ -52,7 +73,7 @@ a:hover{
     list-style: none;
     letter-spacing: 3px;
     font-size: 1em;
-    font-family: 'Libre Bodoni', serif;
+    /* font-family: 'Libre Bodoni', serif; */
 }
 
 .communication:hover{

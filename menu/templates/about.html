@@ -40,10 +40,10 @@
     <body>
 
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-light sticky-top" id="body">     
             <div class="container-fluid">
                 <img src="media/images/logo.png" height="40px" width="40px">
-                <a class="navbar-brand" href="{% url 'home'%}">&nbsp;&nbsp;The Cafe Project</a>
+                <a class="navbar-brand" id="diff" href="{% url 'home'%}">&nbsp;&nbsp;The Cafe Project</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -52,23 +52,22 @@
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="{% url 'home'%}"><i class="fa fa-home"
+                            <a class="nav-link active" id="diff" aria-current="page" href="{% url 'home'%}"><i class="fa fa-home"
                                     aria-hidden="true"></i>&nbsp;&nbsp;Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="{% url 'menu'%}"><i class="fa fa-cutlery"
+                            <a class="nav-link active"  id="diff" href="{% url 'menu'%}"><i class="fa fa-cutlery"
                                     aria-hidden="true"></i>&nbsp;&nbsp;Menu</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#"><i class="fa fa-info-circle"
+                            <a class="nav-link active"  id="diff" href="{% url 'about' %}"><i class="fa fa-info-circle"
                                     aria-hidden="true"></i>&nbsp;&nbsp;About Us</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link active" href="{% url 'logout' %}"><i class="fa fa-user-circle"
+                            <a class="nav-link active"  id="diff" href="{% url 'logout' %}"><i class="fa fa-user-circle"
                                     aria-hidden="true"></i>&nbsp;&nbsp;{{data}}</a>
                         </li>
-
                     </ul>
                 </div>
             </div>
@@ -76,18 +75,26 @@
 
         <div class='container mx-auto mt-5 col-md-10 mt-100 cont_1'>
             <div class="header">
-                <div class="title">Meet the team</div>
-                <p><small class="text-muted">We are a homegrown, globally connected, <br /><u>Experimental</u> HUB that prides itself on its <u>Creativity</u><br /> and <u>Innovation.</u> </small></p>
+                <h1 id="h"><b>MEET THE TEAM</b></h1>
+                <p class="desc">Heyy Human, Welcome to our website<br>
+                    We are a group of friends from Computer Science Engineering department of Kalyani Government Engineering College<br>
+                    The idea of making this website was inspired by the fact that we were not be able to find a decent cafe near our college<br>
+                    So we decided to make a website to make it easier for everyone of our college to get the best cafe nearby them<br>
+                    We have made this website to help you to order your food from our menu.
+                    We hope you enjoy our website and have a good time.
+                </p>
             </div>
             <div class="row" style="justify-content: center">
                 <div class="card col-md-3 mt-100 about_us">
                     <div class="card-content">
                         <div class="card-body p-0">
-                            <div class="profile"> 
-                                <img src="https://user-images.githubusercontent.com/76846542/175092324-f6810dc7-1c68-499b-b6b7-a98647d502de.jpeg"> 
+                            <div class="profile">
+                                <img
+                                    src="https://user-images.githubusercontent.com/76846542/175092324-f6810dc7-1c68-499b-b6b7-a98647d502de.jpeg">
                             </div>
-                            <div class="card-title"> 
-                                Debjit Pal<br /> <small>Web Developer</small> 
+                            <div class="card-title">
+                                Debjit Pal<br>
+                                <small>Frontend Developer</small>
                             </div>
                             <div class="card-subtitle">
                                 <!-- Linkedin -->
@@ -105,17 +112,18 @@
                 <div class="card col-md-3 mt-100 about_us">
                     <div class="card-content">
                         <div class="card-body p-0">
-                            <div class="profile"> 
-                                <img src="https://user-images.githubusercontent.com/76846542/175092231-cd6ca619-9f11-49c8-aa7c-1a663801569e.jpeg"> 
+                            <div class="profile">
+                                <img
+                                    src="https://user-images.githubusercontent.com/76846542/175092231-cd6ca619-9f11-49c8-aa7c-1a663801569e.jpeg">
                             </div>
-                            <div class="card-title"> 
-                                Madhu Shaw<br /> <small>Web Developer</small> 
+                            <div class="card-title">
+                                Madhu Shaw<br><small>Principal Designer</small>
                             </div>
                             <div class="card-subtitle">
                                 <!-- Linkedin -->
                                 <a href="https://www.linkedin.com/in/madhushaw1012/"><img class="iml"
-                                    src="https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-linkedin-512.png"
-                                    height="40px" width="40px"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                        src="https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-linkedin-512.png"
+                                        height="40px" width="40px"></a>&nbsp;&nbsp;&nbsp;&nbsp;
                                 <!-- Github -->
                                 <a href="https://github.com/madhushaw1012"><img class="imr"
                                         src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png"
@@ -127,21 +135,22 @@
                 <div class="card col-md-3 mt-100 about_us">
                     <div class="card-content">
                         <div class="card-body p-0">
-                            <div class="profile"> 
-                                <img src="https://user-images.githubusercontent.com/76846542/175095339-b4aa3630-0f78-4074-9ab5-ec9f7aca7e3e.jpg"> 
+                            <div class="profile">
+                                <img
+                                    src="https://user-images.githubusercontent.com/76846542/175785232-e91bf819-b54f-4de3-923e-669c11eb2904.jpg">
                             </div>
-                            <div class="card-title"> 
-                                Soumyadeep Chowdhury<br /> <small>Web Developer</small> 
+                            <div class="card-title">
+                                Soumyadeep Chowdhury<br> <small>Frontend Developer</small>
                             </div>
                             <div class="card-subtitle">
                                 <!-- Linkedin -->
                                 <a href="https://www.linkedin.com/in/soumyadeep-chowdhury-6bb463193/"><img class="iml"
-                                    src="https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-linkedin-512.png"
-                                    height="40px" width="40px"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                        src="https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-linkedin-512.png"
+                                        height="40px" width="40px"></a>&nbsp;&nbsp;&nbsp;&nbsp;
                                 <!-- Github -->
                                 <a href="https://github.com/Soumyadeep12365"><img class="imr"
-                                    src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png"
-                                    height="40px" width="40px"></a>
+                                        src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png"
+                                        height="40px" width="40px"></a>
                             </div>
                         </div>
                     </div>
@@ -149,17 +158,18 @@
                 <div class="card col-md-3 mt-100 about_us">
                     <div class="card-content">
                         <div class="card-body p-0">
-                            <div class="profile"> 
-                                <img src="https://user-images.githubusercontent.com/76846542/175095419-709762d8-f5ab-4962-9ad4-2d54b0cc1126.jpg"> 
+                            <div class="profile">
+                                <img
+                                    src="https://user-images.githubusercontent.com/76846542/175095419-709762d8-f5ab-4962-9ad4-2d54b0cc1126.jpg">
                             </div>
-                            <div class="card-title"> 
-                                Rajonya Mondal<br /> <small>Web Developer</small> 
+                            <div class="card-title">
+                                Rajonya Mondal<br><small>Backend Developer</small>
                             </div>
                             <div class="card-subtitle">
                                 <!-- Linkedin -->
                                 <a href="https://www.linkedin.com/in/rajonya-mondal-528368191/"><img class="iml"
-                                    src="https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-linkedin-512.png"
-                                    height="40px" width="40px"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                        src="https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-linkedin-512.png"
+                                        height="40px" width="40px"></a>&nbsp;&nbsp;&nbsp;&nbsp;
                                 <!-- Github -->
                                 <a href="https://github.com/rajonya-eng"><img class="imr"
                                         src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png"
@@ -171,17 +181,18 @@
                 <div class="card col-md-3 mt-100 about_us">
                     <div class="card-content">
                         <div class="card-body p-0">
-                            <div class="profile"> 
-                                <img src="https://user-images.githubusercontent.com/76846542/175092213-3312cb9b-21f4-4ba7-8b48-a754dc0060a2.jpeg"> 
+                            <div class="profile">
+                                <img
+                                    src="https://user-images.githubusercontent.com/76846542/175092213-3312cb9b-21f4-4ba7-8b48-a754dc0060a2.jpeg">
                             </div>
-                            <div class="card-title"> 
-                                Saheli Saha<br /> <small>Web Developer</small> 
+                            <div class="card-title">
+                                Saheli Saha<br><small>Content Specialist</small>
                             </div>
                             <div class="card-subtitle">
                                 <!-- Linkedin -->
                                 <a href="https://www.linkedin.com/in/saheli-s-8b8a42122/"><img class="iml"
-                                    src="https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-linkedin-512.png"
-                                    height="40px" width="40px"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                        src="https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-linkedin-512.png"
+                                        height="40px" width="40px"></a>&nbsp;&nbsp;&nbsp;&nbsp;
                                 <!-- Github -->
                                 <a href="https://github.com/sahelisaha2k"><img class="imr"
                                         src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png"
@@ -192,9 +203,11 @@
                 </div>
             </div>
             <div class="ft">
-                <div class="btn btn-outline">Tell a nice word</div>
+                <a href="#">
+                    <div class="btn btn-primary" id="btn">Tell a nice word</div>
+                </a>
             </div>
-        </div> 
+        </div>
 
 
         <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top"><i
@@ -206,7 +219,7 @@
                 <div class="row">
                     <div class="col-md-4 text-center">
                         <div class="footer-links">
-                            <h3 class="mb-4" style="font-family: 'Libre Bodoni', serif;">WHO ARE WE?</h3>
+                            <h3 class="text-bold" id="e">WHO ARE WE?</h3><br>
                             <p class="fn-1">
                                 We are a team of young and enthusiastic designers and developers. We believe in the
                                 power of design and we aim to provide a wide range of design solutions to our clients.
@@ -215,7 +228,7 @@
                     </div>
                     <div class="col-md-4 text-center">
                         <div class="footer-links">
-                            <h3 class="text-bold" style="font-family: 'Libre Bodoni', serif;">QUICK LINKS</h3><br>
+                            <h3 class="text-bold" id="e">QUICK LINKS</h3><br>
                             <a href="{% url 'home'%}" class="links">
                                 <p>HOME</p>
                             </a>
@@ -229,9 +242,7 @@
                     </div>
                     <div class="col-md-4 text-center">
                         <div class="footer-links">
-                            <p>
-                            <h3 style="font-family: 'Libre Bodoni', serif;">CONTACT US</h3>
-                            </p>
+                            <h3 class="text-bold" id="e">CONTACT US</h3><br>
                             <p>
                                 <i class="fa fa-phone" aria-hidden="true"></i> <a class="communication"
                                     href="tel:#">+91-9876-543-210</a>

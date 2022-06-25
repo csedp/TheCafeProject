@@ -5,7 +5,7 @@
 }
 
 .navbar-brand:hover{
-    color: rgba(70, 12, 24, 0.963) !important;
+    color: maroon !important;
     transform: scale(1.1);
     transition: transform 0.5s;
 }
@@ -18,7 +18,7 @@
 }
 
 ul li:hover a{
-    color: rgba(70, 12, 24, 0.963) !important;
+    color: maroon !important;
     transform: scale(1.2);
     transition: transform 0.5s;
 }
