@@ -5,13 +5,6 @@
     font-family: 'Libre Bodoni', serif;
 }
 
-.card{
-    background-color: lightsteelblue;
-}
-.card:hover{
-    background-color: aquamarine;
-}
-
 /* menu items */
 
 .card-text{

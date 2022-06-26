@@ -44,7 +44,7 @@
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
             <div class="container-fluid">
-                <img src="media/images/logo.png" height="40px" width="40px">
+                <img src="media/images/logo.png" height="40px" width="40px" alt="logo">
                 <a class="navbar-brand" href="{% url 'home'%}">&nbsp;&nbsp;The Cafe Project</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
@@ -67,8 +67,8 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" href="{% url 'logout' %}"><i class="fa fa-user-circle"
-                                aria-hidden="true"></i>&nbsp;&nbsp;{{data}}</a>
-                            </li>
+                                    aria-hidden="true"></i>&nbsp;&nbsp;{{data}}</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -86,21 +86,21 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="media/images/c3.jpeg" class="d-block w-100" style="height:600px" alt="...">
+                    <img src="media/images/c3.jpeg" class="d-block w-100" style="height:600px" alt="First Slide">
                     <div class="carousel-caption d-none d-md-block">
                         <h2>Welcome to the Cafe</h2>
                         <p>You will be always our first priority</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="media/images/c2.jpeg" class="d-block w-100" style="height:600px" alt="...">
+                    <img src="media/images/c2.jpeg" class="d-block w-100" style="height:600px" alt="Second Slide">
                     <div class="carousel-caption d-none d-md-block">
                         <h2>Isn't it looking refreshing ?</h2>
                         <p>Why don't just buy and taste it then</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="media/images/c1.jpeg" class="d-block w-100" style="height:600px" alt="...">
+                    <img src="media/images/c1.jpeg" class="d-block w-100" style="height:600px" alt="Third Slide">
                     <div class="carousel-caption d-none d-md-block">
                         <h2>If you want more you can always head over to our menu</h2>
                         <p>Believe me, you won't be disappointed</p>
@@ -127,7 +127,7 @@
                 <div class="col">
                     <a href="{% url 'menu' %}#fries">
                         <div class="card shadow h-100" id="c">
-                            <img src="media/images/ff.jpg" class="card-img-top" height="220px" width="80px">
+                            <img src="media/images/ff.jpg" class="card-img-top" height="220px" width="80px" alt="Fries">
                             <div class="card-body">
                                 <h3 class="card-title text-center text-bold mb-4">Fries</h3>
                             </div>
@@ -137,7 +137,8 @@
                 <div class="col">
                     <a href="{% url 'menu' %}#bs">
                         <div class="card shadow h-100" id="c">
-                            <img src="media/images/bs.jpg" class="card-img-top" height="220px" width="80px">
+                            <img src="media/images/bs.jpg" class="card-img-top" height="220px" width="80px"
+                                alt="Burgers & Sandwiches">
                             <div class="card-body">
                                 <h3 class="card-title text-center text-bold">Burgers & Sandwiches</h3>
                             </div>
@@ -147,7 +148,8 @@
                 <div class="col">
                     <a href="{% url 'menu' %}#pp">
                         <div class="card shadow h-100" id="c">
-                            <img src="media/images/pp.jpg" class="card-img-top" height="220px" width="80px">
+                            <img src="media/images/pp.jpg" class="card-img-top" height="220px" width="80px"
+                                alt="Pizza and Pasta">
                             <div class="card-body">
                                 <h3 class="card-title text-center text-bold">Pizza and Pasta</h3>
                             </div>
@@ -157,7 +159,8 @@
                 <div class="col">
                     <a href="{% url 'menu' %}#bd">
                         <div class="card shadow h-100" id="c">
-                            <img src="media/images/bd.jpg" class="card-img-top" height="220px" width="80px">
+                            <img src="media/images/bd.jpg" class="card-img-top" height="220px" width="80px"
+                                alt="Beverages and Drinks">
                             <div class="card-body">
                                 <h3 class="card-title text-center text-bold mb-4">Beverages and Drinks</h3>
                             </div>
@@ -174,7 +177,8 @@
             <div class="owl-carousel owl-stage owl-theme row">
                 <div class="ms-2 me-2">
                     <div class="card h-100">
-                        <img data-src="media/images/oc1.jpg" class="card-img-top owl-lazy" height="220px" width="80px">
+                        <img data-src="media/images/oc1.jpg" class="card-img-top owl-lazy" height="220px" width="80px"
+                            alt="Chicken Wings">
                         <div class="card-body">
                             <h3 class="card-title text-center text-bold">FRIED CHICKEN WINGS WITH EXTRA DIP</h3>
                             <p id="l" class="text-center">Lipsmacking!</p>
@@ -184,8 +188,9 @@
                 </div>
                 <div class="ms-2 me-2">
                     <div class="card h-100">
-                        <img data-src="media/images/oc2.jpg" class="card-img-top owl-lazy" height="220px" width="80px">
-                        <div class="card-body" >
+                        <img data-src="media/images/oc2.jpg" class="card-img-top owl-lazy" height="220px" width="80px"
+                            alt="Fried Fish">
+                        <div class="card-body">
                             <h3 class="card-title text-center text-bold">CRISPY FRIED FISH & FRENCH FRIES</h3>
                             <p id="l" class="text-center">A never before price!</p>
                             <p class="text-center">Flat Rs. 60 off</p>
@@ -194,7 +199,8 @@
                 </div>
                 <div class="ms-2 me-2">
                     <div class="card h-100">
-                        <img data-src="media/images/oc3.jpg" class="card-img-top owl-lazy" height="220px" width="80px">
+                        <img data-src="media/images/oc3.jpg" class="card-img-top owl-lazy" height="220px" width="80px"
+                            alt="Burger">
                         <div class="card-body">
                             <h3 class="card-title text-center text-bold">CHICKEN MEXICAN CHEESY BURGER</h3>
                             <p id="l" class="text-center">Scrumptious!</p>
@@ -204,7 +210,8 @@
                 </div>
                 <div class="ms-2 me-2">
                     <div class="card h-100">
-                        <img data-src="media/images/oc4.jpg" class="card-img-top owl-lazy" height="220px" width="80px">
+                        <img data-src="media/images/oc4.jpg" class="card-img-top owl-lazy" height="220px" width="80px"
+                            alt="Sandwich">
                         <div class="card-body">
                             <h3 class="card-title text-center text-bold">CHICKEN REVEL ROASTED SANDWICH</h3>
                             <p id="l" class="text-center">Delicious like anything!</p>
@@ -214,7 +221,8 @@
                 </div>
                 <div class="ms-2 me-2">
                     <div class="card h-100">
-                        <img data-src="media/images/oc5.jpg" class="card-img-top owl-lazy" height="220px" width="80px">
+                        <img data-src="media/images/oc5.jpg" class="card-img-top owl-lazy" height="220px" width="80px"
+                            alt="Pasta">
                         <div class="card-body">
                             <h3 class="card-title text-center text-bold">CHICKEN WHITE SAUCE PASTA</h3>
                             <p id="l" class="text-center">Italian Cordon Bleu!</p>
@@ -224,7 +232,8 @@
                 </div>
                 <div class="ms-2 me-2">
                     <div class="card h-100">
-                        <img data-src="media/images/oc6.jpg" class="card-img-top owl-lazy" height="220px" width="80px">
+                        <img data-src="media/images/oc6.jpg" class="card-img-top owl-lazy" height="220px" width="80px"
+                            alt="Pizza">
                         <div class="card-body">
                             <h3 class="card-title text-center text-bold">CHICKEN SAUSAGE PIZZA (HAND TOSSED)</h3>
                             <p id="l" class="text-center">Appetizing One!</p>
@@ -234,7 +243,8 @@
                 </div>
                 <div class="ms-2 me-2">
                     <div class="card h-100">
-                        <img data-src="media/images/oc7.jpg" class="card-img-top owl-lazy" height="220px" width="80px">
+                        <img data-src="media/images/oc7.jpg" class="card-img-top owl-lazy" height="220px" width="80px"
+                            alt="Smoothies">
                         <div class="card-body">
                             <h3 class="card-title text-center text-bold">SMOOTHIES OF ALL FLAVOURS</h3>
                             <p id="l" class="text-center">Treat to your sugartooth!</p>
@@ -242,12 +252,12 @@
                         </div>
                     </div>
                 </div>
-                
+
             </div>
         </div>
 
         <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top"><i
-            class="fas fa-arrow-up"></i> Back to Top</button>
+                class="fas fa-arrow-up"></i>&nbsp;Back to Top</button>
 
         <!-- Footer -->
         <footer>
