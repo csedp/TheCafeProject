@@ -17,6 +17,7 @@ body, #body{
     radial-gradient(60% 50% ellipse at center bottom, #646262 0%, #000000 100%);
     background-attachment: fixed;
 }
+
 #diff:hover{
     color: aquamarine !important;
 }
