@@ -12,10 +12,6 @@ body, #body {
   background-attachment: fixed;
 }
 
-#diff:hover{
-  color:aquamarine !important;
-}
-
 .cont_1 {
   background-color: white;
   text-align: center;

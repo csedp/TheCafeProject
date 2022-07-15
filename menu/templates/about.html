@@ -21,7 +21,7 @@
             crossorigin="anonymous" referrerpolicy="no-referrer"/>
 
         <!-- External CSS files -->
-        <link rel="stylesheet" href="{% static 'navbar.css' %}">
+        <link rel="stylesheet" href="{% static 'navbar2.css' %}">
         <link rel="stylesheet" href="{% static 'about.css' %}">
         <link rel="stylesheet" href="{% static 'footer.css' %}">
 
@@ -43,7 +43,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-light sticky-top" id="body">
             <div class="container-fluid">
                 <img src="media/images/logo.png" height="40px" width="40px" alt="logo">
-                <a class="navbar-brand" id="diff" href="{% url 'home'%}">&nbsp;&nbsp;The Cafe Project</a>
+                <a class="navbar-brand" href="{% url 'home'%}">&nbsp;&nbsp;The Cafe Project</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -52,20 +52,20 @@
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" id="diff" aria-current="page" href="{% url 'home'%}"><i
+                            <a class="nav-link active" aria-current="page" href="{% url 'home'%}"><i
                                     class="fa fa-home" aria-hidden="true"></i>&nbsp;&nbsp;Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" id="diff" href="{% url 'menu'%}"><i class="fa fa-cutlery"
+                            <a class="nav-link active" href="{% url 'menu'%}"><i class="fa fa-cutlery"
                                     aria-hidden="true"></i>&nbsp;&nbsp;Menu</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" id="diff" href="{% url 'about' %}"><i class="fa fa-info-circle"
+                            <a class="nav-link active" href="{% url 'about' %}"><i class="fa fa-info-circle"
                                     aria-hidden="true"></i>&nbsp;&nbsp;About Us</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link active" id="diff" href="{% url 'logout' %}"><i class="fa fa-user-circle"
+                            <a class="nav-link active" href="{% url 'logout' %}"><i class="fa fa-user-circle"
                                     aria-hidden="true"></i>&nbsp;&nbsp;{{data}}</a>
                         </li>
                     </ul>
@@ -92,7 +92,7 @@
                     <div class="card-content">
                         <div class="card-body p-0">
                             <div class="profile">
-                                <img src="https://user-images.githubusercontent.com/76846542/175092324-f6810dc7-1c68-499b-b6b7-a98647d502de.jpeg"
+                                <img src="https://user-images.githubusercontent.com/76846542/179280703-6647c61a-c894-4c5b-a963-054728d49e6e.png"
                                     alt="Debjit Pal">
                             </div>
                             <div class="card-title">
