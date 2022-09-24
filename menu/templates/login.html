@@ -1,14 +1,14 @@
 {% extends 'base.html' %}
 {% block content %}
-
+{% load crispy_forms_tags %}
 <div class="col d-flex justify-content-center" id="login_card">
     <div class="card shadow" id="br">
         <div class="card-body" id="crd_body">
             <h1 id="login"><b><i class="fa fa-power-off" aria-hidden="true"></i>&nbsp;&nbsp;Login</b></h1>
             <form method="POST">
-                {%csrf_token%}
-                {{form.as_p}}
-                <input class="btn btn-primary" type="submit" value="Login">
+                {% csrf_token %}
+                {{ login_form|crispy }}
+                <button class="btn btn-primary" type="submit">Login</button>
             </form>
             <div class="mt-4">
                 <p>Don't have an account ?&nbsp;&nbsp;<a href="{%url 'register'%}" id="reg_now">Register Now!</a></p>
@@ -16,4 +16,4 @@
         </div>
     </div>
 </div>
-{% endblock content %}
+{% endblock %}

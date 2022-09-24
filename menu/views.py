@@ -1,45 +1,47 @@
-from django.shortcuts import render, redirect
-from .models import Menu, Category
-from django.urls import reverse_lazy
-from django.views.generic.edit import FormView
-# Imports for Reordering Feature
-
-from django.shortcuts import redirect
-from django.contrib.auth.views import LoginView
-from django.contrib.auth.forms import UserCreationForm
-from django.contrib.auth import login
-from django.contrib.auth.mixins import LoginRequiredMixin
+from django.shortcuts import  render, redirect
+from .models import Menu
+from .forms import NewUserForm
+from django.contrib.auth import login, authenticate, logout
+from django.contrib import messages
+from django.contrib.auth.forms import AuthenticationForm
 # Create your views here.
 
+def register_request(request):
+	if request.method == "POST":
+		form = NewUserForm(request.POST)
+		if form.is_valid():
+			user = form.save()
+			login(request, user)
+			messages.success(request, "Registration successful." )
+			return redirect("home")
+		messages.error(request, "Unsuccessful registration. Invalid information.")
+	form = NewUserForm()
+	return render (request=request, template_name="register.html", context={"register_form":form})
 
-class CustomLoginView(LoginView):
-    template_name = "login.html"
-    fields = "__all__"
-    redirect_authenticated_user = True
+def login_request(request):
+	if request.method == "POST":
+		form = AuthenticationForm(request, data=request.POST)
+		if form.is_valid():
+			username = form.cleaned_data.get('username')
+			password = form.cleaned_data.get('password')
+			user = authenticate(username=username, password=password)
+			if user is not None:
+				login(request, user)
+				messages.info(request, f"You are now logged in as {username}.")
+				return redirect("home")
+			else:
+				messages.error(request,"Invalid username or password.")
+		else:
+			messages.error(request,"Invalid username or password.")
+	form = AuthenticationForm()
+	return render(request=request, template_name="login.html", context={"login_form":form})
 
-    def get_success_url(self) -> str:
-        return reverse_lazy('home')
-
-
-class RegisterView(FormView):
-    template_name = "register.html"
-    form_class = UserCreationForm
-    redirect_authenticated_user = True
-    success_url = reverse_lazy('home')
-
-    def form_valid(self, form):
-        user = form.save()
-        if user is not None:
-            login(self.request, user)
-        return super(RegisterView, self).form_valid(form)
-
-    def get(self, *args, **kwargs):
-        if self.request.user.is_authenticated:
-            return redirect('home')
-        return super(RegisterView, self).get(*args, **kwargs)
+def logout_request(request):
+	logout(request)
+	messages.info(request, "You have successfully logged out.") 
+	return redirect("home")
 
 # Create your views here.
-
 
 def menu(request):
     context = {}
@@ -66,16 +68,3 @@ def about(request):
     else:
         context = {"data": "Sign-in"}
     return render(request, 'about.html', context)
-
-
-def category_list(request):
-    data = Category.objects.all().order_by('-id')
-    return render(request, 'category_list.html', {'data': data})
-
-# Product List According to Category
-
-
-def category_menu_list(request, cat_id):
-    cat = Category.objects.get(id=cat_id)
-    data = Menu.objects.filter(category=cat).order_by('-id')
-    return render(request, 'category_menu_list.html', {'data': data, })
