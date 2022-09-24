@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-l)!khvk4z-v2k!rrf-en&hturgjjmecefp(u&vko^rwpibamy$
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['testcafe0.herokuapp.com','127.0.0.1']
+ALLOWED_HOSTS = ['thecafeproject.herokuapp.com','127.0.0.1']
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
