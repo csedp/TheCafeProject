@@ -79,12 +79,14 @@ label {
 }
 
 #crd_body {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
 }
-
+#l{
+    text-align: center;
+}
 #reg_now {
     color: blue;
 }
