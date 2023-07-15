@@ -7,8 +7,10 @@ from django.contrib.auth.models import User
 
 class NewUserForm(UserCreationForm):
     """new user form"""
+
     class Meta:
         """meta class"""
+
         model = User
         fields = ("username", "password1", "password2")
 

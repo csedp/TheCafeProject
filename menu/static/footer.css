@@ -1,57 +1,57 @@
 footer {
     padding-top: 20px;
     padding-bottom: 20px;
-    background-color:lightsteelblue; 
-    color:black; 
+    background-color: lightsteelblue;
+    color: black;
     border-radius: 20px;
 }
 
 #e {
-    text-align:center;
+    text-align: center;
     margin: 0 auto 10px;
-    position:relative;
-    color:navy;
+    position: relative;
+    color: navy;
     font-family: 'Cormorant Garamond', serif;
     font-weight: bolder;
 }
 
 #e::after {
-    content:'';
-    background:red;
+    content: '';
+    background: red;
     width: 120px;
     height: 2px;
     border-radius: 5px;
-    position:absolute;
+    position: absolute;
     bottom: 0;
-    left:50%;
-    transform:translateX(-50%);
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-.imag:hover{
+.imag:hover {
     transform: scale(1.1);
     transition: transform 0.5s;
 }
 
-a:hover{
-    text-decoration: none!important;
+a:hover {
+    text-decoration: none !important;
     list-style: none;
 }
 
-.fn{
+.fn {
     text-decoration: none;
     list-style: none;
     letter-spacing: 3px;
     font-size: 1em;
 }
 
-.fn-1{
+.fn-1 {
     text-decoration: none;
     list-style: none;
     letter-spacing: 3px;
     font-size: 1em;
 }
 
-.links{
+.links {
     color: black;
     text-decoration: none;
     list-style: none;
@@ -59,20 +59,20 @@ a:hover{
     font-size: 1em;
 }
 
-.links:hover{
+.links:hover {
     color: red !important;
     transform: scale(1.1);
     transition: transform 0.5s;
 }
 
-.communication{
+.communication {
     text-decoration: none;
     list-style: none;
     letter-spacing: 3px;
     font-size: 1em;
 }
 
-.communication:hover{
+.communication:hover {
     color: red !important;
 }
 
@@ -91,6 +91,7 @@ a:hover{
     padding-right: 0px;
     z-index: 9999;
 }
+
 #btn-back-to-top:hover {
     transform: scale(1);
     background-color: navy !important;

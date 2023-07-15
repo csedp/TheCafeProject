@@ -1,14 +1,15 @@
-*{
+* {
   margin: 0 0;
   padding: 0 0;
   box-sizing: border-box;
   font-family: 'Libre Bodoni', serif;
 }
 
-body, #body {
+body,
+#body {
   background-image:
-  radial-gradient(50% 30% ellipse at center top, #3d32c0ca 0%, rgba(53, 103, 195, 0.555) 100%),
-  radial-gradient(60% 50% ellipse at center bottom, #646262 0%, #000000 100%);
+    radial-gradient(50% 30% ellipse at center top, #3d32c0ca 0%, rgba(53, 103, 195, 0.555) 100%),
+    radial-gradient(60% 50% ellipse at center bottom, #646262 0%, #000000 100%);
   background-attachment: fixed;
 }
 
@@ -21,29 +22,29 @@ body, #body {
 }
 
 #h {
-  text-align:center;
+  text-align: center;
   margin: 0 auto 30px;
-  position:relative;
+  position: relative;
   line-height: 60px;
-  color:navy;
+  color: navy;
   font-size: 40px;
   font-family: 'Cormorant Garamond', serif;
   font-weight: bolder;
 }
 
 #h::after {
-  content:'';
-  background:red;
+  content: '';
+  background: red;
   width: 280px;
   height: 5px;
   border-radius: 5px;
-  position:absolute;
+  position: absolute;
   bottom: 0;
-  left:50%;
-  transform:translateX(-50%);
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-.desc{
+.desc {
   font-size: 18px;
   color: #3d32c0;
   margin: 0 auto;
@@ -78,18 +79,18 @@ body, #body {
   bottom: 35px;
 }
 
-.card{
+.card {
   background-color: lightsteelblue;
 }
 
-.card:hover{
+.card:hover {
   cursor: pointer;
   transform: scale(1.1);
   transition: all 0.5s ease-in-out;
   background-color: aquamarine;
 }
 
-.card-title{
+.card-title {
   font-size: 20px;
 }
 
@@ -114,7 +115,8 @@ body, #body {
   justify-content: center;
 }
 
-.iml:hover, .imr:hover {
+.iml:hover,
+.imr:hover {
   transform: scale(1.1);
   transition: transform 0.5s;
 }

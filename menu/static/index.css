@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0 0;
     padding: 0 0;
     box-sizing: border-box;
@@ -7,7 +7,7 @@
 
 /*Carousel*/
 
-.carousel-inner img{
+.carousel-inner img {
     opacity: 0.6;
 }
 
@@ -29,7 +29,7 @@
 /*Categories*/
 
 a {
-    text-decoration: none!important;
+    text-decoration: none !important;
 }
 
 .card-title {
@@ -39,26 +39,26 @@ a {
 }
 
 #h {
-    text-align:center;
+    text-align: center;
     margin: 0 auto 80px;
-    position:relative;
+    position: relative;
     line-height: 60px;
-    color:navy;
+    color: navy;
     font-size: 40px;
     font-family: 'Cormorant Garamond', serif;
     font-weight: bolder;
 }
 
 #h::after {
-    content:'';
-    background:red;
+    content: '';
+    background: red;
     width: 280px;
     height: 5px;
     border-radius: 5px;
-    position:absolute;
+    position: absolute;
     bottom: 0;
-    left:50%;
-    transform:translateX(-50%);
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 #c:hover {
@@ -70,7 +70,7 @@ a {
     cursor: pointer;
 }
 
-.card-img-top{
+.card-img-top {
     object-fit: cover;
 }
 

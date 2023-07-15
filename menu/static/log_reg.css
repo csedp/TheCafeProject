@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0 0;
     padding: 0 0;
     box-sizing: border-box;
@@ -11,23 +11,26 @@
     }
 }
 
-body, #body{
+body,
+#body {
     background-image:
-    radial-gradient(50% 30% ellipse at center top, #3d32c0ca 0%, rgba(53, 103, 195, 0.555) 100%),
-    radial-gradient(60% 50% ellipse at center bottom, #646262 0%, #000000 100%);
+        radial-gradient(50% 30% ellipse at center top, #3d32c0ca 0%, rgba(53, 103, 195, 0.555) 100%),
+        radial-gradient(60% 50% ellipse at center bottom, #646262 0%, #000000 100%);
     background-attachment: fixed;
 }
 
-#diff:hover{
+#diff:hover {
     color: aquamarine !important;
 }
 
-input[type=text], [type=password], textarea {
+input[type=text],
+[type=password],
+textarea {
     border: 1px solid #757575;
     border-radius: 5px;
     padding: 10px;
     width: 100%;
-    background-color:midnightblue; 
+    background-color: midnightblue;
     color: white;
 }
 
@@ -43,7 +46,7 @@ label {
 
 .btn {
     display: block;
-    margin: 10px auto; 
+    margin: 10px auto;
     border: 1px solid #757575;
     background-color: #FFF;
     color: midnightblue;
@@ -55,11 +58,11 @@ label {
 }
 
 #login {
-    text-align:center;
+    text-align: center;
     margin: 0 auto 40px;
-    position:relative;
+    position: relative;
     line-height: 40px;
-    color:midnightblue;
+    color: midnightblue;
     font-size: 40px;
     font-family: 'Cormorant Garamond', serif;
     font-weight: bolder;
@@ -69,6 +72,7 @@ label {
     padding-top: 50px;
     padding-bottom: 50px;
 }
+
 #login_card_reg {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -84,13 +88,15 @@ label {
     margin-left: 30px;
     margin-right: 30px;
 }
-#l{
+
+#l {
     text-align: center;
 }
+
 #reg_now {
     color: blue;
 }
 
-#reg_now:hover{
+#reg_now:hover {
     color: red !important;
 }
